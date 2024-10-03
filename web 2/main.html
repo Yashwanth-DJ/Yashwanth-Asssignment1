@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome !!!</title>
+
+    <link rel="icon" type="image/x-icon" href="img/profile.png">
+    <!----CSS link----->
+    <link rel="stylesheet" href="styles.css">
+
+    <!----Fontawesome CDN Link----->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+
+    <style>
+        html, body{
+    width: 100% !important;
+    height: 100% !important;
+    /* display: grid !*/
+    justify-content: center !important;
+    align-items: center !important;
+    scroll-behavior: smooth;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    }
+
+    input[type=email] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    }
+
+    input[type=tel] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="hero" id="aboutMe">
+            <nav>
+                <img src="img/logo2.jpg" class="logo">
+                <ul>
+                    <li><a href="#aboutMe">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certifications">Certificates</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                
+            </nav>
+            <div class="container1">
+                <div class="info" >
+                    <h1>My name is <span>YASHWANTH</span> and</h1>
+                    <h1>I'm a Data Engineer</h1>
+                    <p>Welcome to my Portfolio Website wherein I put all information <br> related to my professional and academic career.</p>
+                </div>
+
+                <div class="img-box">
+                    <!--<img src="img/back.png" class="back-img">-->
+                    <img src="img/profile-removebg-preview.jpg" class="man-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <section style="margin-top: 3.5%; margin-bottom: 1%;" id="projects">
+            <div class="containerText">
+                <span class="text1">Projects</span>
+            </div>
+        </section>
+        <section>
+           
+             <div class="wrapper">
+                
+                    <div class="project-Window">
+                        <div class ="front">
+                            <img src="img/software_predicting_crime_2.jpg">
+                        </div>
+                        <div class="back">
+                            <div class="imageInfo">
+                                <h1>Art Gallery Management</h1>
+                                <p></p>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="project-Window">
+                        <div class ="front">
+                            <img src="img/twi19-76-fig1.jpg">
+                        </div>
+                        <div class="back">
+                            <div class="imageInfo">
+                                <h1>Hospital Management Application</h1>
+                                <p>Deploying Machine Learning models like - SVM, Naive Bayes and Ensemble Learning to detect spread of misinformation on social media platforms like - Twitter. 
+                                    Used SemEval rumour dataset for the project</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="project-Window">
+                        <div class ="front">
+                            <img src="img/Data-Analytics-What-is-Data-Analytics-Edureka-1.png">
+                        </div>
+                        <div class="back">
+                            <div class="imageInfo">
+                                <h1>Twitter Data Analysis using Python3</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        
+        <section style="margin-top: 3.5%; margin-bottom: 1%;" id="certifications">
+            <div class="containerText">
+                <span class="text1">Certifications</span>
+            </div>
+        </section>
+        <section>
+               
+                <div class="wrapper">
+                
+                    <div class="card">
+                        <img src="img/Certificate 1.jpg">
+                        <div class="imageInfo">
+                            <h1>HackerRank SQL (Advanced)</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        </div>
+                    </div>
+
+
+                    
+
+                </div> 
+
+            </section> 
+
+        <section style="margin-top: 3.5%; margin-bottom: 1%;" id="certifications">
+                <div class="containerText">
+                    <span class="text1">Contact Me</span>
+                </div>
+            </section>
+        
+        <section id="contact">
+            <div class="containerForm">
+                <form action="/action_page.php">
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="fname">Name</label>
+                    </div>
+                    <div class="col-75">
+                      <input type="text" id="name" name="name" placeholder="your name">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="email">Email</label>
+                    </div>
+                    <div class="col-75">
+                      <input type="email" id="email" name="email" placeholder="your email">
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="tel">Telephone Number</label>
+                    </div>
+                    <div class="col-75">
+                      <input type="tel" id="tel" name="tel" maxlength="10" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="your telephone number">
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="country">Country</label>
+                    </div>
+                    <div class="col-75">
+                      <select id="country" name="country">
+                        <option value="USA">--Select--</option>
+
+                        <option value="India">India</option>
+                        <option value="Australia">Australia</option>
+                        <option value="Canada">Ireland</option>
+                        <option value="USA">USA</option> 
+                        <option value="UK">UK</option> 
+                        <option value="Germany">Germany</option>
+                        <option value="France">France</option>
+                        <option value="Singapore">Singapore</option>
+
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="subject">Message</label>
+                    </div>
+                    <div class="col-75">
+                      <textarea id="subject" name="subject" placeholder="Write something.." style="height: 190px"></textarea>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <input type="submit" value="Submit" onclick="alert('Dummy Website')" >
+                  </div>
+                </form>
+              </div>
+        </section>
+
+            <section style="margin-top: 3.5%; margin-bottom: 1%;">
+                
+                <footer>
+                    <div class="list">
+                        <ul>
+                            <li>
+                                <a href="#">Terms & Conditions</a>
+                            </li>
+                            <li>
+                                <a href="#"> &copy; Copyrights</a>
+                            </li>
+                            <li>
+                                <a href="mailto:mishra.roh@northeastern.edu">Email</a>
+                            </li> 
+                            <li>
+                                <!--<a href="mailto:singh.abhishek3@northeastern.edu">Contact</a>-->
+                                <a href="tel:+1(857)891-7651">Contact
+                                    <i class="fa-solid fa-phone"></i>
+                                  </a>
+                            </li>      
+                            <li class="social"> 
+                                <a href="https://github.com/AbhiSingh378"><i class="fab fa-dribbble"></i></a>
+                                <a href="https://www.linkedin.com/in/abhishek-singh-566800182/"><i class="fab fa-linkedin-in"></i></a>     
+                            </li>
+                        </ul>
+                       
+                    </div>
+            </footer>
+        
+            
+             </section>
+        </div>
+   
+</body>
+</html>

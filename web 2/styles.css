@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+@media screen and (min-width: 480px) {
+   *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+}
+
+@media screen and (max-width: 600px) {
+    .left-col, .center-col, .right-col   {
+      width: 100%;
+    }
+    footer .list{
+        width: 100% !important;
+    }
+    
+  }
+
+  @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+    .ipad-portrait { color: red; 
+    
+    } /* your css rules for ipad portrait */
+  }
+  @media all and (device-width: 1024px) and (device-height: 768px) and (orientation:landscape) {
+    .ipad-landscape { color: blue; } /* your css rules for ipad landscape */
+  }
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+    label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    }
+
+    input[type=submit] {
+    background-color: #070808;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float : right;
+    }
+
+    input[type=submit]:hover {
+    background-color: #c4c8c4;
+    }
+
+    .containerForm {
+    border-radius: 5px;
+    background-color: #fdfafa;
+    padding: 20px;
+    }
+
+    .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+    }
+
+    .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    
+    }
+    .row{
+        display: flex;
+ 
+        justify-content: center;
+    }
+
+    /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+    .col-25, .col-75, .left-col, .center-col, .right-col ,input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+    }
+nav ul li a{
+    text-decoration: none;
+    color: #2867cb;
+}
+nav ul li a:hover{
+    color: #368f0d;
+}
+.btn{
+    background: #104ecb;
+    border-radius: 5px;
+    padding: 10px 18px;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    border: 1px solid transparent;
+    transition: all 0.4s ease;
+}
+.btn:hover{
+    background: transparent;
+    color: #ff4321;
+    border: 1px solid #ff4321;
+}
+.info{
+    margin-left: 8%;
+    margin-top: 10%;
+}
+.info h1{
+    font-size: 40px;
+    color: #444242;
+}
+.info h1 span{
+   color: #0e6ab1;
+}
+.info p{
+    color: #606163;
+    line-height: 22px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.img-box{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+.img-box img{
+    height: 70%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+.img-box:hover .back-img{
+    bottom: 40px;
+}
+.img-box:hover .man-img{
+    left: 54%;
+    opacity: .5;
+}
+.social{
+    margin-left: 50%;
+    margin-top: 25px;
+}
+.social a{
+    font-size: 28px;
+    color: #606163;
+    margin-right: 20px;
+}
+.social a:hover{
+    color: #1da56e;
+}
+
+.header {
+    background-color: #606163;
+    height: 160px;
+    text-align: center;
+    color: #09408b;
+    padding: 65px;
+    align-content: center;
+}
+.container div {
+    padding: 1%;
+    box-sizing: border-box;
+    min-height: 500px;
+}
+.left-col, .right-col {
+    background-color: #73acee;
+    width: 33.3%;
+    float: left;
+}
+.center-col {
+    width: 33.3%;
+    float: left;
+}
+.container:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    /* background: #edf2fc; */
+}
+.card {
+    width: 28%;
+    height: 360px;
+    padding: 2rem 1rem;
+    background: #fff;
+    position: relative;
+    display: flex !important;
+    align-items: flex-end;
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+.card:hover{
+    transform: translateY(20px);
+}
+.card:before{
+    content: "";
+    position:absolute;
+    top:0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom,rgba(37, 53, 170, 0.5),rgb(71, 173, 189));
+    z-index:2;
+    transition: 0.5s,all;
+    opacity: 0;
+}
+.card:hover:before{
+    opacity: 1;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background: #c4d3e6;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+nav{
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.card .imageInfo{
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+}
+
+
+
+.card .imageInfo .btnImage{
+    box-shadow: 0px 7px 10px rgba(93, 8, 212, 0.5);
+}
+
+.footer{
+    margin-top: 5%;
+}
+
+.containerText{
+    text-align: center;
+    /* position: absolute; */
+    /* transform: translate(-50%,-50%); */
+    align-content: center;
+}
+
+.containerText span{
+    
+    text-transform: uppercase;
+    display: block;
+}
+
+.text1 {
+    color: black;
+    font-size: 50px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+    animation: text 3s 1;
+    text-decoration: underline ;     
+    text-decoration-color: black;
+    text-decoration-thickness: 5% !important;
+}
+
+.project-Window .imageInfo{
+    position: relative;
+    z-index: 3;
+    color: #000;
+     transform: translate(-50%,-50%);
+     top:50%;
+     left:50%;
+    /* transform: translateY(30px);
+    transition: 0.5s all; */
+}
+
+.project-Window .imageInfo h1{
+    margin:0;
+}
+
+.project-Window .imageInfo p{
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+@keyframes text {
+    0%{
+        color: black;
+        /* margin-bottom: -40px; */
+    }
+    30%{
+        letter-spacing: 25px;
+        /* margin-bottom: -40px; */
+    }
+    85%{
+        letter-spacing: 8px;
+        /* margin-bottom:  -40px; */
+    }
+}
+
+
+/* project section */
+/* .middle {
+    
+    position: absolute;
+    transform: translateX(-50%,-50%);
+} */
+.card:hover .imageInfo{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+@media screen and (max-width: 900px) {
+    .flexdiv{
+        flex-direction: column;
+      
+    }
+    .flexdiv .img-box{
+        display: none;
+    }
+    .wrapper{
+        flex-direction: column;
+    }
+    .wrapper .card {
+        width: fit-content;
+    }
+
+    .wrapper .project-Window{
+        width: auto !important;
+    }
+    .hero {
+        height: auto;
+    }
+    .hero .nav{
+        flex-direction: column;
+      
+    }
+}
+
+@media screen and (max-width: 1024px) {
+ 
+    .wrapper{
+        flex-direction: column;
+    }
+    .wrapper .card {
+        width: fit-content;
+        left: 23%;
+    }
+}
+.card .imageInfo h1{
+    margin:0;
+}
+
+.card .imageInfo p{
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+.card .imageInfo .btnImage{
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background: #fff;
+    color:#000;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+.project-Window {
+    width: 28%;
+    height: 360px;
+    padding: 2rem 1rem;
+    background: rgb(230, 233, 238);
+    position: relative;
+    /* display: flex !important; */
+    align-items: flex-end;
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.project-Window:hover:before{
+    opacity: 1;
+}
+
+
+.front, .back {
+    width:90%;
+    height: 82%;
+    overflow: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    transition: transform 0.6s linear;
+}
+.front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.front {
+    
+    transform: perspective(600px) rotateY(0deg);
+}
+.back {
+    background: rgb(138, 172, 215);
+    transform: perspective(600px) rotateY(180deg);
+}
+.project-Window:hover > .front {
+    transform: perspective(600px) rotateY(-180deg);
+}
+
+.project-Window:hover > .back {
+    transform: perspective(600px) rotateY(0deg);
+}
+footer {
+    height: 80px;
+    background: #cdcfd1;
+    display: flex;
+}
+footer .list {
+    width: 100%;
+}
+footer ul{
+        list-style-type: none;
+        display: flex;
+        margin: 20px;
+        position: relative;
+        
+    }
+    
+    footer ul li {
+        margin: 10px 20px;
+    }
+    footer ul li:last-child {
+        margin: 10px 20px;
+        position: absolute;
+        right: 10px;
+    }   
+
+.flexdiv{
+    display: flex;
+}
