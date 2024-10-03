@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Feedback</title>
+  </head>
+  <body>
+    <div id="container">
+      <main>
+        <h2>Feedback</h2>
+        <h3>Love something? Hate something? Let us know!</h3>
+        Note : Fields marked with an asterisk(*) are mandatory
+        <br /><br />
+        <form name="myForm" method="post" id="myForm" novalidate>
+          <label for="title">Title*:</label>
+          <input
+            type="radio"
+            name="title"
+            id="miss"
+            value="Miss"
+            required="required"
+            class="titleRadio"
+          />Miss
+          <input
+            type="radio"
+            name="title"
+            id="mr"
+            value="Mr"
+            required="required"
+            class="titleRadio"
+          />Mr.
+          <input
+            type="radio"
+            name="title"
+            id="mrs"
+            value="Mrs"
+            required="required"
+            class="titleRadio"
+          />Mrs. <br />
+          <div id="title_error" style="display: none">
+            Please select a title
+          </div>
+          <br />
+
+          <label for="firstName">First Name*:</label>
+          <input
+            type="text"
+            name="firstName"
+            id="firstName"
+            placeholder="First Name"
+          />
+          <br />
+          <div id="firstname_error" style="display: none">
+            Please enter a valid first name under 50 characters
+          </div>
+          <br />
+
+          <label for="lastName">Last Name*:</label>
+          <input
+            type="text"
+            name="lastName"
+            id="lastName"
+            placeholder="Last Name"
+          />
+          <br />
+          <div id="lastname_error" style="display: none">
+            Please enter a valid last name under 50 characters
+          </div>
+          <br />
+
+          <label for="emailId">Email Id*:</label>
+          <input
+            type="text"
+            name="emailId"
+            id="emailId"
+            placeholder="user@northeastern.edu"
+          />
+          <br />
+          <div id="email_error" style="display: none">
+            Please enter a valid email under 50 characters
+          </div>
+          <br />
+
+          <label for="phoneNumber">Phone Number*:</label>
+          <input
+            type="text"
+            name="phoneNumber"
+            id="phoneNumber"
+            placeholder="xxx-xxx-xxxx"
+          />
+          <br />
+          <div id="phone_error" style="display: none">
+            Please enter a valid phone number
+          </div>
+          <br />
+
+          <label for="streetAddress1">Street Address 1*:</label>
+          <input
+            type="text"
+            name="streetAddress1"
+            id="streetAddress1"
+            placeholder="Street Address 1"
+            required="required"
+          />
+          <br />
+          <br />
+
+          <label for="streetAddress2">Street Address 2:</label>
+          <input
+            type="text"
+            name="streetAddress2"
+            id="streetAddress2"
+            placeholder="Street Address 2"
+          />
+          <br /><br />
+
+          <label for="city">City*:</label>
+          <input
+            type="text"
+            name="city"
+            id="city"
+            placeholder="City"
+            required="required"
+          /><br />
+          <div id="city_error" style="display: none">
+            Please enter a valid city name under 50 characters
+          </div>
+          <br />
+
+          <label for="state">State*:</label>
+          <input
+            type="text"
+            name="state"
+            id="state"
+            placeholder="State"
+            required="required"
+          /><br />
+          <div id="state_error" style="display: none">
+            Please enter a valid state name under 50 characters
+          </div>
+          <br />
+
+          <label for="zipcode">ZipCode*:</label>
+          <input
+            type="text"
+            name="zipcode"
+            id="zipcode"
+            placeholder="xxxxx"
+          /><br />
+          <div id="zip_error" style="display: none">
+            Please enter a valid zip code
+          </div>
+          <br />
+
+          <label for="source">How did you hear*:</label>
+          <input type="checkbox" class="source" value="Facebook" /> Facebook
+          <input type="checkbox" class="source" value="Google" /> Google
+          <input type="checkbox" class="source" value="Yelp" /> Yelp
+          <div id="source_error" style="display: none">
+            <br />
+            Please select at least one source
+          </div>
+          <br /><br />
+
+          <label for="drinks">Choose a Drink:</label>
+          <select name="drink" id="drink" required="required">
+            <option value="none" selected disabled hidden>
+              Select an Option
+            </option>
+            <option value="Triple Chocolate Mocha">Triple Chocolate Mocha</option>
+            <option value="Coffee">Coffee</option>
+            <option value="Hot chocolate">Hot Chocolate</option>
+            <option value="Hot Ice Matcha Latte">Hot Ice Matcha Latte</option>
+            <option value="Green tea">Green Tea</option>
+          </select>
+          <br /><br />
+          <div id="wrapCheckContainer">
+            <div class="checkBoxContainer">
+              <input
+                type="checkbox"
+                class="drinkSize"
+                id="drinkCheckSmall"
+                name="drinkCheckBox"
+                onchange="validateTextField(this)"
+              />
+              <label for=" drinkSize" id="drinkCheckTextSmall"></label>
+            </div>
+            <div class="checkBoxContainer">
+              <input
+                type="checkbox"
+                class="drinkSize"
+                id="drinkCheckMed"
+                name="drinkCheckBox"
+                onchange="validateTextField(this)"
+              />
+              <label for=" drinkSize" id="drinkCheckTextMed"></label>
+            </div>
+            <div class="checkBoxContainer">
+              <input
+                type="checkbox"
+                class="drinkSize"
+                id="drinkCheckLarge"
+                name="drinkCheckBox"
+                onchange="validateTextField(this)"
+              />
+              <label for="drinkSize" id="drinkCheckTextLarge"></label>
+            </div>
+          </div>
+
+          <div class="clear"></div>
+          <div id="radioButton_error" style="display: none">
+            Please select one of the options
+          </div>
+          <br />
+
+          <div>
+            <input
+              type="text"
+              name="dynamic_textField"
+              id="dynamic_textField"
+              placeholder="Additional Requirements"
+              novalidate
+            />
+          </div>
+
+          <label for="comments">Comments:</label>
+          <textarea
+            name="text"
+            id="comments"
+            placeholder="Your comments"
+            rows="5"
+            cols="25"
+          ></textarea>
+          <br /><br />
+          <input type="Submit" value="Submit" id="submitButton" disabled />
+          <input type="Reset" onclick="resetForm()" />
+          <br /><br />
+        </form>
+      </main>
+    </div>
+
+    <table id="myTable">
+      <tr>
+        <th>Title</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+        <th>Phone Number</th>
+        <th>Street Address 1</th>
+        <th>Street Address 2</th>     
+        <th>City</th>
+        <th>State</th>
+        <th>Zip Code</th>
+        <th>How did you hear?</th>
+        <th>Drink</th>
+        <th>Comments</th>
+      </tr>
+    </table>
+  </body>
+
+  <script src="script.js"></script>
+</html>
